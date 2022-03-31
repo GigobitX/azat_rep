@@ -30,18 +30,46 @@ print (one_day, ' дн', one_hour, ' час', one_minute, ' мин', one_second,
 
 * Решить задачу под пунктом b, не создавая новый список.'''
 
-all_values = [0]
-idx = 0
-while idx < 1000:
-    idx = idx + 1
-    all_values = all_values + [1]
-    print (all_values)
-    '''if not idx %2:
-        idx = idx + 1
-    else:
-        all_values = all_values + [idx]
-        idx = idx + 1
-        print (all_values)'''
+
+# list_a = [idx ** 3 for idx in range(1000) if id%2]
+
+# # print(list_a)
+# def plusing(lst):
+#     answer = 1
+#     for i in lst:
+#         answer += i
+#     return answer
+
+# print(plusing([1, 2, 3, 4, 5]))
+
+#2.a
+# from functools import reduce
+list_a = [idx ** 3 for idx in range(1000) if idx%2]
+print(str(list_a[30]))
+# reduce(lambda a, x: a + x, map(lambda x: list(x), list_a))first_elem = list_a[0]
+
+# my_list = ['Иванов Иван Иванович' ,'','', 'Больница', 'Исполняющий обязанности главного врача']
+# name = my_list[0].split()
+# name.extend(my_list[3:])
+# print(name)
+
+
+# a = plusing(list_a[1])
+# list_b = [plusing() for idx in list_a if idx%7]
+# print(a)
+'''
+x = [int(a) for a in str(num)]
+if x % 7:
+    print(x)
+else:
+    print('no')'''
+
+
+
+
+
+
+
 
 
 # #while all_values <= 1000
